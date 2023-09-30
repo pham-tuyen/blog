@@ -1,0 +1,13 @@
+* {
+    text-decoration: none!important;
+}
+#nav a { 
+    color: white!important;
+}
+#nav .nav-button {
+    background: inherit;
+    border: 0px;
+}
+#nav .nav-button:hover {
+    background: #dddddd50;
+}
