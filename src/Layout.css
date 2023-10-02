@@ -1,13 +1,19 @@
 * {
     text-decoration: none!important;
 }
-#nav a { 
+.dark { 
     color: white!important;
 }
-#nav .nav-button {
+.dark a { 
+    color: white!important;
+}
+.dark .nav-button {
     background: inherit;
     border: 0px;
 }
-#nav .nav-button:hover {
+.dark .nav-button:hover {
     background: #dddddd50;
+}
+.opacity-80 {
+    opacity: 0.8!important;
 }

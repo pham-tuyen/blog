@@ -5,7 +5,7 @@ import "./Layout.css"
 function Layout() {
   return (
     <>
-      <Navbar className="rounded-bottom" id="nav" sticky="top" data-bs-theme="dark" bg="dark">
+      <Navbar className="rounded-bottom dark opacity-80" sticky="top" data-bs-theme="dark" bg="black">
         <Container fluid className="px-3">
           <Navbar.Brand className="ms-4">
             <Link to="/">Phạm Tuyên</Link>
@@ -20,12 +20,19 @@ function Layout() {
             <Nav.Item className="mx-4">
               <Link to="/internet"><Button className="nav-button">Tôi trên mạng</Button></Link>
             </Nav.Item>
+            <Nav.Item className="mx-4">
+              <Link to="/donate"><Button className="nav-button">Donate</Button></Link>
+            </Nav.Item>
           </Nav>
         </Container>
       </Navbar>
 
-      <Container fluid className="mt-5">
+      <Container>
         <Outlet/>
+      </Container>
+
+      <Container fluid id="foot" className="bg-dark dark rounded-top">
+        d
       </Container>
     </>
   );
