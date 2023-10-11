@@ -2,4 +2,8 @@
     object-fit: cover;
     max-width: 100%;
     max-height: 180px;
+    transition: transform .2s ease-in-out;
+}
+.im:hover{
+    transform: scale(1.05);
 }

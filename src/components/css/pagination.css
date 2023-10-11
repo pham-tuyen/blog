@@ -1,0 +1,11 @@
+.page-item > .page-link {
+    color: black;
+}
+.page-item > .page-link:hover {
+    color: #838383!important;
+}
+.pagination > .active *{ 
+    background: #212529!important; 
+    color: white;
+    border: 1px solid #212529;
+}    

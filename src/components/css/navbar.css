@@ -4,16 +4,16 @@
 .dark a { 
     color: white!important;
 }
+.dark img {
+    transition: all .2s ease-in-out;
+}
+.dark img:hover {
+    transform: scale(1.1);
+}
 .dark .nav-button {
     background: inherit;
     border: 0px;
 }
 .dark .nav-button:hover {
     background: #dddddd50;
-}
-.opacity-80 {
-    opacity: 0.8!important;
-}
-.brand {
-    font-size: 1.3rem;
 }

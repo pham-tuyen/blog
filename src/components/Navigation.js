@@ -11,11 +11,11 @@ export default function Navigation() {
   const handleShow = () => setShow(true);
   return (
     <>
-      <Navbar className="rounded-bottom dark opacity-80" sticky="top" data-bs-theme="dark" bg="black">
+      <Navbar className="rounded-bottom dark" sticky="top" data-bs-theme="dark" bg="dark">
       <Container fluid className="px-3">
         <Navbar.Brand className="ms-4">
           <Link to="/">
-            <Image src={logo} width="30" height="30" className="d-inline-block align-top me-2" alt="Logo"></Image>
+            <Image src={logo} width="30" height="30" className="d-inline-block align-top me-2 rounded" alt="Logo"></Image>
             Phạm Tuyên
           </Link>
         </Navbar.Brand>

@@ -8,7 +8,7 @@ export default function Layout() {
     <>
       <Navigation/>
 
-      <Container className="my-2">
+      <Container className="my-3">
         <Outlet/>
       </Container>
 

@@ -1,5 +1,6 @@
 import { Pagination } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import "./css/pagination.css"
 
 export default function PageNumber(props) {
     const navigate = useNavigate()
@@ -16,7 +17,7 @@ export default function PageNumber(props) {
             <Pagination.First onClick={() => navigate("/")}/>
             <Pagination.Prev onClick={() => navigate(`/${((props.active - 1) > 1) ? `pg${(props.active - 1)}` : ""}`)}/>
             {items}
-            <Pagination.Next onClick={() => navigate(`/${((props.active + 1) <= props.length) ? `pg${(props.active + 1)}` : `pg${props.active}`}`)}/>
+            <Pagination.Next onClick={() => navigate(`/${((props.active + 1) <= props.length) ? `pg${(props.active + 1)}` : `${(props.active !== 1) ? `pg${(props.active)}` : ""}`}`)}/>
             <Pagination.Last onClick={() => navigate(`/${(props.length !== 1) ? `pg${props.length}` : ""}`)}/>
         </Pagination>
     );
